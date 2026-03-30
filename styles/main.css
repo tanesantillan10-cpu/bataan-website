@@ -146,7 +146,7 @@ p {
 
 h1 {
     font-family: 'Arial Black', serif;
-    font-size: 110px;
+    font-size: clamp(40px, 10vw, 110px);
     color: #002274;
     margin-bottom: 5px;
 }
