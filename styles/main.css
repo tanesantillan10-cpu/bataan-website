@@ -1,4 +1,3 @@
-/* --- GENERAL SETUP --- */
 * {
     margin: 0;
     padding: 0;
@@ -86,7 +85,7 @@ p {
     color: #ffb500;
 }
 
-/* --- DROPDOWN --- */
+/*DROPDOWN*/
 .dropdown-menu {
     position: absolute;
     top: 100%;
@@ -146,7 +145,7 @@ p {
 
 h1 {
     font-family: 'Arial Black', serif;
-    font-size: clamp(40px, 10vw, 110px);
+    font-size: clamp(32px, 8vw, 90px);
     color: #002274;
     margin-bottom: 5px;
 }
@@ -176,7 +175,6 @@ h1 {
     transform: translateY(-3px);
 }
 
-/* --- GRID LAYOUT --- */
 .container {
     background: #fafafa;
     padding: 80px 10%;
@@ -228,7 +226,6 @@ h1 {
     color: #004993;
 }
 
-/* --- WWII SITES SECTION --- */
 .wwii-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -269,7 +266,7 @@ h1 {
 }
 
 .location-tag {
-    background: rgba(184, 134, 11, 0.9); /* Gold theme */
+    background: rgba(184, 134, 11, 0.9); 
     color: white;
     padding: 5px 12px;
     border-radius: 50px;
@@ -328,8 +325,8 @@ h1 {
 }
 
 .hero-content-small {
-    background: rgba(255, 255, 255, 0.85); /* Glass effect */
-    padding: 30px 60px; /* Compact padding */
+    background: rgba(255, 255, 255, 0.85); 
+    padding: 30px 60px; 
     border-radius: 25px;
     text-align: center;
     max-width: 600px; 
@@ -372,7 +369,6 @@ body.no-bg {
     background-color: #d1d9e6;
 }
 
-/* SIMPLE ALTERNATING LAYOUT */
 .simple-row {
     display: flex;
     align-items: center;
@@ -449,10 +445,9 @@ body.no-bg {
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-/* Adjust overlap para sa reverse card */
 .overlap-card.reverse .overlap-text-box {
     margin-left: 0;
-    margin-right: -10%; /* Mo-overlap sa Right */
+    margin-right: -10%; 
 }
 
 .overlap-text-box h3 {
@@ -461,7 +456,6 @@ body.no-bg {
     color: #001b70;
     margin: 15px 0;
 }
-/* --- STATIC HORIZONTAL LAYOUT --- */
 .museum-static-row {
     display: flex;
     justify-content: space-between;
@@ -588,8 +582,6 @@ footer {
     gap: 10px;
 }
 
-/* --- NEW HERITAGE SPLIT LAYOUT (No Reuse) --- */
-
 .heritage-wrapper {
     display: flex;
     flex-direction: column;
@@ -599,8 +591,8 @@ footer {
 
 .split-row {
     display: flex;
-    min-height: 550px; /* Pirme taas ang dating sa screen */
-    align-items: stretch; /* Mao kini ang mo-equal sa height sa image ug text */
+    min-height: 550px; 
+    align-items: stretch; 
     border-bottom: 1px solid #eee;
 }
 
@@ -609,13 +601,13 @@ footer {
 }
 
 .split-image {
-    flex: 1.2; /* Mas dako gamay ang hulagway kaysa sa text area */
+    flex: 1.2; 
 }
 
 .split-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Sigurado nga dili ma-stretch ang image */
+    object-fit: cover;
     display: block;
 }
 
@@ -639,7 +631,6 @@ footer {
     margin: 15px 0;
 }
 
-/* Para sa Mobile: Himoong vertical ang layout */
 @media (max-width: 900px) {
     .split-row, .split-row.reverse {
         flex-direction: column;
@@ -649,8 +640,6 @@ footer {
     }
 }
 
-/* --- HERITAGE SPLIT-SCREEN LAYOUT --- */
-
 .heritage-wrapper {
     display: flex;
     flex-direction: column;
@@ -658,40 +647,36 @@ footer {
     background: #ffffff;
 }
 
-/* Mao kini ang nag-gunit sa matag laray */
 .split-row {
     display: flex; 
     width: 100%;
-    min-height: 550px; /* Pirme taas ang dating sa screen */
-    align-items: stretch; /* Importante: Para mag-equal ang height sa image ug text */
+    min-height: 550px; 
+    align-items: stretch; 
     border-bottom: 1px solid #f0f0f0;
 }
 
-/* Reverse effect para sa ikaduha nga block */
 .split-row.reverse {
     flex-direction: row-reverse;
 }
 
-/* Image Side */
 .split-image {
-    flex: 1.2; /* Mas dako gamay ang image kaysa sa text area */
+    flex: 1.2; 
     overflow: hidden;
 }
 
 .split-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Sigurado nga dili ma-stretch ang image */
+    object-fit: cover; 
     display: block;
 }
 
-/* Text Side */
 .split-info {
     flex: 1; 
     background: #fafafa;
     display: flex;
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
+    align-items: center; 
+    justify-content: center;
     padding: 60px;
 }
 
@@ -700,7 +685,7 @@ footer {
 }
 
 .info-content h3 {
-    font-family: 'Playfair Display', serif; /* O bisan unsa nga serif font nimo */
+    font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
     color: #001b70;
     margin-bottom: 20px;
@@ -713,7 +698,6 @@ footer {
     margin-bottom: 30px;
 }
 
-/* Button style */
 .read-more {
     display: inline-block;
     text-decoration: none;
@@ -723,14 +707,13 @@ footer {
     text-transform: uppercase;
     font-size: 0.9rem;
 }
-/* --- UPDATED OVERLAP EDITORIAL LAYOUT --- */
 
 .coastal-layered-wrapper {
     padding: 80px 10%;
-    background: #fdfdfd; /* Limpyo nga background para sa landmarks */
+    background: #fdfdfd; 
     display: flex;
     flex-direction: column;
-    gap: 100px; /* Space tali sa matag landmark */
+    gap: 100px; 
 }
 
 .overlap-item {
@@ -740,13 +723,12 @@ footer {
     width: 100%;
 }
 
-/* Mao kini ang nag-reverse sa position sa Image ug Text */
 .overlap-item.reverse {
     flex-direction: row-reverse;
 }
 
 .overlap-img-box {
-    flex: 0 0 65%; /* Image mokuha og 65% width */
+    flex: 0 0 65%; 
     height: 450px;
     overflow: hidden;
     border-radius: 30px;
@@ -774,7 +756,7 @@ footer {
 
 .overlap-item.reverse .overlap-text-card {
     margin-left: 0;
-    margin-right: -10%; /* Mo-overlap sa tuo nga side */
+    margin-right: -10%; 
 }
 
 .overlap-text-card h3 {
@@ -788,9 +770,8 @@ footer {
     font-size: 1rem;
     color: #444;
     line-height: 1.6;
-    font-weight: 400; /* Standard weight para dili bug-at basahon */
+    font-weight: 400;
 }
-/* --- BENTO GASTRONOMY GRID --- */
 
 .bento-container {
     padding: 60px 10%;
@@ -800,7 +781,7 @@ footer {
 .bento-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 250px; /* Base height for each row */
+    grid-auto-rows: 250px; 
     gap: 20px;
 }
 
@@ -811,7 +792,6 @@ footer {
     background: #f0f0f0;
 }
 
-/* Sizing Logic */
 .bento-large {
     grid-column: span 2;
     grid-row: span 2;
@@ -832,7 +812,6 @@ footer {
     display: block;
 }
 
-/* Bento Info Overlay */
 .bento-overlay {
     position: absolute;
     bottom: 0;
@@ -860,7 +839,6 @@ footer {
     line-height: 1.4;
     font-weight: 400; 
 }
-/* --- FESTIVAL TIMELINE LAYOUT --- */
 
 .festival-timeline {
     padding: 80px 10%;
@@ -874,7 +852,6 @@ footer {
     margin: auto;
 }
 
-/* Ang Vertical Line sa Tunga */
 .timeline-container::before {
     content: '';
     position: absolute;
@@ -955,7 +932,7 @@ footer {
 }
 /*URBAN ART*/
 .row-text p {
-    font-weight: 400; /* Overriding your global 800 weight for better readability */
+    font-weight: 400; 
     font-family: Courier New, sans-serif;
     color: #444;
 }
@@ -964,8 +941,6 @@ footer {
     display: inline-block;
     margin-bottom: 10px;
 }
-/* --- BEACH SPECIFIC STYLES --- */
-
 .beach-tags {
     display: flex;
     flex-wrap: wrap;
@@ -985,16 +960,12 @@ footer {
     text-transform: uppercase;
 }
 
-/* Ensure the grid looks balanced with only 3 items */
 @media (min-width: 1024px) {
     .grid-layout {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-/* --- MOUNTAIN SPECIFIC STYLES --- */
-
-/* Reusing your .simple-row, just adding small layout tweaks */
 .mt-specs {
     display: flex;
     gap: 10px;
@@ -1003,7 +974,7 @@ footer {
 }
 
 .mt-specs span {
-    background: #001b70; /* Deep blue theme */
+    background: #001b70;
     color: white;
     font-size: 11px;
     padding: 5px 15px;
@@ -1013,7 +984,6 @@ footer {
     text-transform: uppercase;
 }
 
-/* Ensure consistent spacing for mountains */
 .simple-row {
     padding-bottom: 60px;
     border-bottom: 1px solid #eee;
@@ -1024,9 +994,6 @@ footer {
     border-bottom: none;
 }
 
-/* --- WATERFALLS SPECIFIC STYLES --- */
-
-/* Details Badge with Water Blue Theme */
 .wf-details {
     display: flex;
     gap: 12px;
@@ -1035,8 +1002,8 @@ footer {
 }
 
 .wf-details span {
-    background: #e3f2fd; /* Light Water Blue */
-    color: #0d47a1; /* Deep Navy Blue */
+    background: #e3f2fd; 
+    color: #0d47a1; 
     font-size: 11px;
     padding: 6px 14px;
     border-radius: 8px;
@@ -1046,14 +1013,12 @@ footer {
     border: 1px solid #bbdefb;
 }
 
-/* Ensure the text side looks clean */
 .row-text p {
-    font-weight: 400; /* Overriding your global 800 for better flow */
+    font-weight: 400; 
     font-family: Arial, sans-serif;
     color: #333;
     line-height: 1.8;
 }
-/* --- BIRD SANCTUARY SPECIFIC STYLES --- */
 
 .sanctuary-info-grid {
     display: grid;
@@ -1063,7 +1028,7 @@ footer {
 }
 
 .info-block {
-    background: #f0f7f4; /* Nature Green tint */
+    background: #f0f7f4;
     padding: 15px;
     border-radius: 12px;
     border-left: 4px solid #2d6a4f;
@@ -1085,7 +1050,7 @@ footer {
 }
 
 .significance-box {
-    background: #fff8e1; /* Soft yellow for highlights */
+    background: #fff8e1;
     padding: 15px 20px;
     border-radius: 10px;
     font-family: Arial, sans-serif;
@@ -1093,8 +1058,6 @@ footer {
     color: #856404;
     border: 1px dashed #ffeeba;
 }
-/* --- PAWIKAN CENTER SPECIFIC STYLES --- */
-
 .activities-box {
     background: #fdfdfd;
     padding: 20px;
@@ -1136,7 +1099,7 @@ footer {
     display: flex;
     align-items: center;
     gap: 15px;
-    background: #fff8e1; /* Soft Yellow */
+    background: #fff8e1; 
     padding: 15px 20px;
     border-radius: 12px;
     border-left: 5px solid #ffb500;
@@ -1151,8 +1114,6 @@ footer {
     color: #856404;
     line-height: 1.4;
 }
-
-/* --- HIKING ADVENTURE SPECIFIC STYLES --- */
 
 .trek-meta {
     display: flex;
@@ -1172,14 +1133,14 @@ footer {
 .meta-item span {
     display: block;
     font-weight: 800;
-    color: #b8860b; /* Matching your Gold/Brown theme */
+    color: #b8860b; 
     text-transform: uppercase;
     font-size: 0.8rem;
     margin-top: 5px;
 }
 
 .adventure-warning {
-    background: #fdf2f2; /* Light Red/Pink Tint */
+    background: #fdf2f2; 
     padding: 15px 20px;
     border-radius: 10px;
     font-family: Arial, sans-serif;
@@ -1189,14 +1150,10 @@ footer {
     line-height: 1.5;
 }
 
-/* --- ECO-TOURISM SPECIFIC (Kini ra ang naay .eco-page parent) --- */
-
-/* Sigurohon nga ang spacing sa taas dili pilit sa nav */
 body.eco-page {
     padding-top: 140px !important; 
 }
 
-/* Hero Section para sa Eco-Tourism ra */
 .eco-page .hero-subpage {
     display: flex;
     justify-content: center;
@@ -1206,34 +1163,30 @@ body.eco-page {
     margin-top: -20px;
 }
 
-/* Ang container sa Eco-Tourism himoong mas compact */
 .eco-page .container {
-    background: transparent; /* Para makita ang background color sa body */
+    background: transparent; 
     padding: 20px 10%;
     margin-top: 0;
 }
 
-/* Ang Row layout nga para lang sa Eco-Tourism */
 .eco-page .simple-row {
     display: flex;
     align-items: center;
     gap: 30px;
-    margin-bottom: 30px; /* Mas mubo nga gintang */
+    margin-bottom: 30px; 
     background: #ffffff;
     padding: 25px;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    flex-direction: row !important; /* Pugngan ang alternating layout sa uban */
+    flex-direction: row !important; 
 }
 
-/* Pugngan ang row-reverse sa Eco-Tourism bisag nth-child(even) */
 .eco-page .simple-row:nth-child(even) {
     flex-direction: row !important;
 }
 
-/* Image styling para sa Eco-Tourism ra */
 .eco-page .row-img {
-    flex: 0 0 40%; /* 40% width ra ang image */
+    flex: 0 0 40%; 
     height: 250px;
     min-width: 250px;
 }
@@ -1245,12 +1198,10 @@ body.eco-page {
     border-radius: 12px;
 }
 
-/* Text styling para sa Eco-Tourism ra */
 .eco-page .row-text {
     flex: 1;
 }
 
-/* Green tags para sa Eco-Tourism */
 .eco-tags {
     display: flex;
     flex-wrap: wrap;
@@ -1268,8 +1219,6 @@ body.eco-page {
     text-transform: uppercase;
     border: 1px solid #c8e6c9;
 }
-
-/* --- WATER SPORTS SPECIFIC --- */
 
 .watersports-page .ws-details {
     display: flex;
@@ -1290,19 +1239,19 @@ body.eco-page {
 }
 
 .watersports-page .simple-row {
-    display: flex; /* Siguroha nga flexbox para mo-tapad ang image ug text */
+    display: flex; 
     flex-direction: row !important;
     background: white;
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
     margin-bottom: 30px;
-    align-items: stretch; /* Para parehas ang gitas-on sa image ug text box */
+    align-items: stretch; 
 }
 
 .watersports-page .row-img {
-    flex: 0 0 350px; /* Fixed width para sa desktop */
-    height: 250px;   /* Fixed height para compact */
+    flex: 0 0 350px;
+    height: 250px; 
     overflow: hidden;
     border-radius: 12px;
 }
@@ -1310,14 +1259,12 @@ body.eco-page {
 .watersports-page .row-img img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Mao ni ang sekreto: mo-fit ang image nga dili ma-distort */
+    object-fit: cover;
     display: block;
 }
-/* --- MANGROVE KAYAKING SPECIFIC --- */
-
 .kayaking-page .simple-row {
     display: flex;
-    flex-direction: row !important; /* Dili mag-reverse para consistent card look */
+    flex-direction: row !important; 
     background: white;
     padding: 30px;
     border-radius: 20px;
@@ -1349,8 +1296,8 @@ body.eco-page {
 }
 
 .kayaking-page .kayak-tags span {
-    background: #e0f2f1; /* Light Teal background */
-    color: #00695c;      /* Deep Teal/Green text */
+    background: #e0f2f1;
+    color: #00695c;      
     font-size: 10px;
     font-weight: 700;
     padding: 5px 12px;
@@ -1359,7 +1306,6 @@ body.eco-page {
     border: 1px solid #b2dfdb;
 }
 
-/* Mobile View */
 @media (max-width: 850px) {
     .kayaking-page .simple-row {
         flex-direction: column !important;
@@ -1371,7 +1317,6 @@ body.eco-page {
         height: 220px;
     }
 }
-/* --- CONSERVATION PAGE SPECIFIC --- */
 
 .conservation-page .simple-row {
     display: flex;
@@ -1381,12 +1326,12 @@ body.eco-page {
     border-radius: 25px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     margin-bottom: 30px;
-    align-items: flex-start; /* Gi-align sa taas para sa taas nga text */
+    align-items: flex-start;
     gap: 40px;
 }
 
 .conservation-page .row-img {
-    flex: 0 0 450px; /* Mas dako nga image area */
+    flex: 0 0 450px;
     height: 400px;
     overflow: hidden;
     border-radius: 20px;
@@ -1399,7 +1344,6 @@ body.eco-page {
     display: block;
 }
 
-/* Activity List Styling */
 .conservation-page .activities-box {
     background: #f0f7f4;
     padding: 20px;
@@ -1430,7 +1374,6 @@ body.eco-page {
     font-weight: bold;
 }
 
-/* Event Card (Festival Highlight) */
 .conservation-page .event-card {
     display: flex;
     align-items: center;
@@ -1461,5 +1404,20 @@ body.eco-page {
         flex: 0 0 auto;
         width: 100%;
         height: 250px;
+    }
+}
+@media (max-width: 600px) {
+    .hero {
+        padding: 20px;
+    }
+
+    .hero-content {
+        max-width: 100%; 
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.5rem; 
+        line-height: 1.1;
     }
 }
